@@ -125,6 +125,3 @@ class Synthesizer(object):
             labels_cutoff = np.zeros(np.shape(marginals))
             beta_opt.append((self.beta_optimizer(marginals, ground)))
         return beta_opt
-
-
-

@@ -1,6 +1,6 @@
 import numpy as np
 from scipy import sparse
-from label_aggregator import LabelAggregator
+from program_synthesis.label_aggregator import LabelAggregator
 
 def odds_to_prob(l):
   """
@@ -36,6 +36,7 @@ class Verifier(object):
             from snorkel.learning import GenerativeModel
             from snorkel.learning import RandomSearch
             from snorkel.learning.structure import DependencySelector
+            from snorkel.labeling.model.label_model import LabelModel
             gen_model = GenerativeModel()
             gen_model.train(self.L_train, epochs=100, decay=0.001 ** (1.0 / 100), step_size=0.005, reg_param=1.0)
         else:
