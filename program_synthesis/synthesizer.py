@@ -121,6 +121,7 @@ class Synthesizer(object):
 
         beta_opt = []
         for i,hf in enumerate(heuristics):
+            # print(hf.predict_proba(X[:,feat_combos[i]]))
             marginals = hf.predict_proba(X[:,feat_combos[i]])[:,1]
             labels_cutoff = np.zeros(np.shape(marginals))
             beta_opt.append((self.beta_optimizer(marginals, ground)))
