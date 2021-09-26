@@ -1,6 +1,8 @@
 # Reef: Overcoming the Barrier to Labeling Training Data
 *Code for VLDB 2019 paper [Snuba: Automating Weak Supervision to Label Training Data](http://www.vldb.org/pvldb/vol12/p223-varma.pdf)*
 
+## Major change: Now compliant with Python 3
+
 Reef is an automated system for labeling training data based on a small labeled dataset. Reef utilizes ideas from program synthesis to *automatically* generate a set of interpretable heuristics that are then used to label unlabeled training data efficiently. 
 
 ## Installation
